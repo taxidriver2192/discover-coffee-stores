@@ -26,7 +26,7 @@ Man skal ikke tænke meget på performance, når man bygger i next.js, dette få
 **Hvilke fordele giver next.js andgående preformance**
 **Code Splitting**
 kun henter de filler, den valgte side skal bruge, det sker af sig selv.
-![[https://github.com/taxidriver2192/discover-coffee-stores/blob/main/README-Images/Performance.png|alt=preformance]]
+[[https://github.com/taxidriver2192/discover-coffee-stores/blob/main/README-Images/Performance.png]]
 **Minifying files**
 Fjerner alt det der ikke er vigtigt.
 Webpack er stadig vigtig at lære, men det meste sker nu af sig selv.
