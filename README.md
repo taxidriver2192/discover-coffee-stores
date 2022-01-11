@@ -164,3 +164,13 @@ Den skulle gerne sætte det op til en `CDN` som der vil optimer din load speed o
 Edge function arbejde rigtig tæt sammen med middleware. Det vil sige at hvis jeg har lavet noget middleware, vil det automatisk blive sat op.
 
 Dette var nogle af de vigtig ting der er kommet med i next.js 12.
+
+# Hvordan er fil strukturen.
+
+<figure><img src="README-Images/FilStruktur.png"></figure>
+
+_Hvordan laver vi en ny route / page._
+
+Laver en fil i pages hello.js
+
+<figure><img src="README-Images/NewPage.png"></figure>
