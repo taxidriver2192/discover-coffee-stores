@@ -84,3 +84,10 @@ Man har mulighed for at bygge den bedste preformenc app man kan, hvis bruger nex
 Hvis du har en meget lille opgave, vil det være fint ikke at arbejde med next.js. Hvis man har brug for at vælger mellem server side og clint side kan det være en god ide at bruge next.js.
 
 Hvis dette ikke er nødvendigt, er der ikke den store grund til at bruge next.js.
+
+## Opdater Pacpage
+
+Her kan man finde data om hvordan man opdater sine package, sådan at man får alle fordelene ved den nyeste version.
+har fuldt denne guide til at gøre det.
+
+<a href="https://nextjs.org/docs/upgrading" >Upgrade guide </a>
