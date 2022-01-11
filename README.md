@@ -104,17 +104,17 @@ Her nede under kan du se nogle af fordelene middleware kan tilbyde.
 
 <figure><img src="README-Images/Middleware.png"></figure>
 
-** Her er også nogle andre fordele middleware tilbyder. **
+**Her er også nogle andre fordele middleware tilbyder.**
 
-. Authentication
-. Bot protection
-. Redirects and rewrites
-. Handling unsupported browsers
-. Feature flags and A/B tests
-. Server-side analytics
-. Advanced i18n routing requirements
-. Logging
-. And more!
+- Authentication
+- Bot protection
+- Redirects and rewrites
+- Handling unsupported browsers
+- Feature flags and A/B tests
+- Server-side analytics
+- Advanced i18n routing requirements
+- Logging
+- And more!
 
 ### Du kan selv vælge hvornår du bruger det.
 
