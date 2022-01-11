@@ -27,8 +27,8 @@ Man skal ikke tænke meget på performance, når man bygger i next.js, dette få
 **Code Splitting**
 kun henter de filler, den valgte side skal bruge, det sker af sig selv.
 
-<figure><img src="README-Images/Performance.png"><figcaption>image caption</figcaption></figure>
-[[https://github.com/taxidriver2192/discover-coffee-stores/blob/main/README-Images/Performance.png]]
+<figure><img src="README-Images/Performance.png"></figure>
+
 **Minifying files**
 Fjerner alt det der ikke er vigtigt.
 Webpack er stadig vigtig at lære, men det meste sker nu af sig selv.
@@ -40,16 +40,18 @@ Vi kommer til at bruge et img compuntent, også ud efter hvilke størelse browse
 Henter kun data der skal bruges, hvis brugeren scroller længer ned, vil serverern hente mere data og automatisk loade det ind. når dataen kommer ind i view port.
 
 **stor telefon**
-![[Pasted image 20220111095415.png]]
+
+<figure><img src="README-Images/BigPhone.png"></figure>
 
 **lille telefon**
-![[Pasted image 20220111095447.png]]
+
+<figure><img src="README-Images/SmallPhone.png"></figure>
 
 ### File base Routing
 
 I next.js kommer der automatisk pages, og jeg har ikke brug for at installer andre packets, som også ses på dette billede.
 
-![[Pasted image 20220111095852.png]]
+<figure><img src="README-Images/FileBaseRouting.png"></figure>
 
 Det hjælper også på preformace pga dette. Derfor skal jeg ikke sætte noget op for at det skal virke, så længe at jeg bruger deres pages strugtur.
 
@@ -57,13 +59,13 @@ Det hjælper også på preformace pga dette. Derfor skal jeg ikke sætte noget o
 
 #### Godt for SEO
 
-![[Pasted image 20220111100222.png]]
+<figure><img src="README-Images/SEO.png"></figure>
 
 Next.js gør det muligt at opdater titel og meta beskrivelsse på alle dine sider og se hvad en bot ser.
 
 ### Serverless Funktions
 
-![[Pasted image 20220111100415.png]]
+<figure><img src="README-Images/ServerlessFunctions.png"></figure>
 
 Den automatisk laver en node server der køre din api, sådan at du let kan dele data mellem din frotend og din backend.
 
