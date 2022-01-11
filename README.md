@@ -68,7 +68,6 @@ Next.js gør det muligt at opdater titel og meta beskrivelse på alle dine sider
 <figure><img src="README-Images/ServerlessFunctions.png"></figure>
 
 Den automatisk laver en node server der køre din api, sådan at du let kan dele data mellem din frontend og din backend.
-
 I din backend kontakter vi de forskellige api'er og dette gør at brugeren ikke kan få lov at se hvilken api'er der er tilgængelig for brugeren.
 
 Serverless køre kun når der er noget der skal bruges, sådan at jeg skal køre en server, hvis den ikke skal bruges.
@@ -76,7 +75,6 @@ Serverless køre kun når der er noget der skal bruges, sådan at jeg skal køre
 ## Hvorfor er next.js så populært?
 
 Du kan allerede se en masse grunde til hvorfor next.js er så smart og populært. Her slipper jeg for en del arbejde, når man arbejder med react app.
-
 Man har mulighed for at bygge den bedste performance app man kan, hvis bruger next.js.
 
 ### Skal man altid bruge next.js
@@ -127,3 +125,32 @@ export function middleware(req, ev) {
   return new Response("Hello, world!");
 }
 ```
+
+Normalt tager det en del setup for at sætte op, men det dejlige er at next.js klare alle de her ting for en.
+
+## De gør sig klar til at arbejde med react 18
+
+React 18 er i beta når jeg laver dette projekt, men med next.js gør at der højest sandsynlig ikke kommer de store breaking changes.
+
+Det gør det også muligt at imponerer package direkte gennem en url, sådan at du lynhurtig kan teste med en anden package.
+
+```js
+module.exports = {
+  experimental: {
+    urlImports: ["https://cdn.skypack.dev"],
+  },
+};
+```
+
+Sådan at du kan hente package sådan her.
+
+```js
+import confetti from "https://cdn.skypack.dev/canvas-confetti";
+```
+
+### BOT Aware ISR Fallback
+
+Her bliver det muligt at lave server render, hvis fx `Gooogle` kommer forbi og skal teste vores side, her prøver vi at spare så meget som muligt. Her viser vi fx ikke en loader, Selv om dette gør det mere brugervenligt for bruger, men en bot har intet forhold til dette og gør kun vores side langsommere.
+
+Dette komme til at gøre ens SEO en del bedre.
+Dette var nogle af de vigtig ting der er kommet med i next.js 12.
