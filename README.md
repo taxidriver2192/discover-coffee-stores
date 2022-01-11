@@ -1,34 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Hvorfor findes next.js
 
-## Getting Started
+Next.js er et framework der er bygget oppe foran react, giver dig mulighed for at bygge scalabel apps.
 
-First, run the development server:
+Det gør det muligt at render content på serveren.
+Next.js er fremtiden af react apps.
+Next.js er kendt som et fremwork, for produktion.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+I react render man altid content hos en client, men pga next.js er det muligt at ligge det på serveren. Dette gør din app meget mere flexsibel.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Fordelle ved next js
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#### Forsekellig render teknikger.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+**Statick side**
+SEO, Post, Products
+**Server side**
+Netlix, dynamic news feed
+**Incremental site**
+Man får statisk side og server side i en pakke, ikke helt sikker på hvordan dette her virker. men det er vel også derfor jeg prøver at lære mere om det.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### Performance
 
-## Learn More
+Man skal ikke tænke meget på performance, når man bygger i next.js, dette får man gratis, hvis man bruger fremworket rigtig.
 
-To learn more about Next.js, take a look at the following resources:
+**Hvilke fordele giver next.js andgående preformance**
+**Code Splitting**
+kun henter de filler, den valgte side skal bruge, det sker af sig selv.
+![[Pasted image 20220111094603.png]]
+**Minifying files**
+Fjerner alt det der ikke er vigtigt.
+Webpack er stadig vigtig at lære, men det meste sker nu af sig selv.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Images optimization**
+Vi kommer til at bruge et img compuntent, også ud efter hvilke størelse browseren er i. bliver billede lavet mindre eller støre automatisk.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Pre-fetching assets**
+Henter kun data der skal bruges, hvis brugeren scroller længer ned, vil serverern hente mere data og automatisk loade det ind. når dataen kommer ind i view port.
 
-## Deploy on Vercel
+**stor telefon**
+![[Pasted image 20220111095415.png]]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**lille telefon**
+![[Pasted image 20220111095447.png]]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### File base Routing
+
+I next.js kommer der automatisk pages, og jeg har ikke brug for at installer andre packets, som også ses på dette billede.
+
+![[Pasted image 20220111095852.png]]
+
+Det hjælper også på preformace pga dette. Derfor skal jeg ikke sætte noget op for at det skal virke, så længe at jeg bruger deres pages strugtur.
+
+## hvike problemer løser det?
+
+#### Godt for SEO
+
+![[Pasted image 20220111100222.png]]
+
+Next.js gør det muligt at opdater titel og meta beskrivelsse på alle dine sider og se hvad en bot ser.
+
+### Serverless Funktions
+
+![[Pasted image 20220111100415.png]]
+
+Den automatisk laver en node server der køre din api, sådan at du let kan dele data mellem din frotend og din backend.
+
+I din backend kontakter vi de forskellige api'er og dette gør at brugeren ikke kan få lov at se hvike api'er der er tilgængelig for brugeren.
+
+Serverless køre kun når der er noget der skal bruges, sådan at jeg skal køre en server, hvis den ikke skal bruges.
+
+## Hvorfor er next.js så populært?
+
+Du kan allerade se en masse grunde til hvorfor next.js er så smart og populært. Her slipper jeg for en del arbejde, når man arbejder med react app.
+
+Man har mulighed for at bygge den bedste preformenc app man kan, hvis bruger next.js.
+
+### Skal man altid bruge next.js
+
+Hvis du har en meget lille opgave, vil det være fint ikke at arbejde med next.js. Hvis man har brug for at vælger mellem server side og clint side kan det være en god ide at bruge next.js.
+
+Hvis dette ikke er nødvendigt, er der ikke den store grund til at bruge next.js.
