@@ -153,4 +153,14 @@ import confetti from "https://cdn.skypack.dev/canvas-confetti";
 Her bliver det muligt at lave server render, hvis fx `Gooogle` kommer forbi og skal teste vores side, her prøver vi at spare så meget som muligt. Her viser vi fx ikke en loader, Selv om dette gør det mere brugervenligt for bruger, men en bot har intet forhold til dette og gør kun vores side langsommere.
 
 Dette komme til at gøre ens SEO en del bedre.
+
+### Nok en af de bedste ting i version 12 er Edge Functions (BETA)
+
+Hvis man bruger Vercel som cloud provider, så er edge function rigtig sejt.
+Når jeg pusher noget kode, skulle det hele gerne virke ud af boksen.
+
+Den skulle gerne sætte det op til en `CDN` som der vil optimer din load speed og gøre vores respond en del hurtigere.
+
+Edge function arbejde rigtig tæt sammen med middleware. Det vil sige at hvis jeg har lavet noget middleware, vil det automatisk blive sat op.
+
 Dette var nogle af de vigtig ting der er kommet med i next.js 12.
