@@ -26,6 +26,8 @@ Man skal ikke tænke meget på performance, når man bygger i next.js, dette få
 **Hvilke fordele giver next.js andgående preformance**
 **Code Splitting**
 kun henter de filler, den valgte side skal bruge, det sker af sig selv.
+
+<figure><img src="README-Images/Performance.png"><figcaption>image caption</figcaption></figure>
 [[https://github.com/taxidriver2192/discover-coffee-stores/blob/main/README-Images/Performance.png]]
 **Minifying files**
 Fjerner alt det der ikke er vigtigt.
